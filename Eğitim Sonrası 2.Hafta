@@ -62,6 +62,6 @@ toplamHesap =fatura+ (fatura * bahşişOrani)/100
 kişibaşiödenecek_hesap=print(toplamHesap/kişiSayisi)
 
 #8.srounun cevabı
-_5yil=3652460605
+_5yil=365*24*60*60*5
 mecvütNüfüs=int(2000000)
 print(mecvütNüfüs +_5yil//7 + _5yil//45 - _5yil//13)
