@@ -1,1 +1,40 @@
+1. SORU
 
+def urun_kaydet():
+    urun_adi = input("Ürün adını girin: ")
+    urun_fiyati = float(input("Ürün fiyatını girin: "))
+    with open("urunler.txt", "a") as dosya:
+        dosya.write(f"{urun_adi} - {urun_fiyati} TL\n")
+      
+2. SORU
+
+def kelime_degistir(eski_kelime, yeni_kelime, dosya_adi):
+    with open(dosya_adi, "r") as dosya:
+        icerik = dosya.read()
+
+    icerik = icerik.replace(eski_kelime, yeni_kelime)
+
+    with open(dosya_adi, "w") as dosya:
+        dosya.write(icerik)
+
+
+3. SORU
+
+class Vehicle:
+    def init(self, brand, model, year, weight):
+        self.brand = brand
+        self.model = model
+        self.year = year
+        self.weight = weight
+
+    def start(self):
+        print(f"{self.brand} {self.model} started.")
+
+    def stop(self):
+        print(f"{self.brand} {self.model} stopped.")
+
+    def get_info(self):
+        print(f"Brand: {self.brand}\nModel: {self.model}\nYear: {self.year}\nWeight: {self.weight}")
+
+class Bus(Vehicle):
+    pass
