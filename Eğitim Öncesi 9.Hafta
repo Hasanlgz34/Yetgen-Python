@@ -1,1 +1,30 @@
+1. SORU
+
+class Vehicle:
+    def __init__(self, capacity):
+        self.capacity = capacity
+
+    def seating_capacity(self):
+        return self.capacity
+
+class Bus(Vehicle):
+    def __init__(self, capacity=50):
+        Vehicle.__init__(self, capacity)
+
+
+2. SORU
+
+class Vehicle:
+    def __init__(self, capacity):
+        self.capacity = capacity
+
+    def seating_capacity(self):
+        return self.capacity
+
+class Bus(Vehicle):
+    def __init__(self, capacity=50):
+        Vehicle.__init__(self, capacity)
+School_bus = Bus()
+print(isinstance(School_bus, Vehicle))
+
 
